@@ -5,7 +5,7 @@
 
       <div class="mt-5">
         <%= form_tag("/answer", method: "post", data: { turbo: false }) do %>
-          <blockquote class="blockquote" style="background-color: #ffffff; border-left: 5px solid #e0e0e0; padding: 10px; margin: 10px 0;">
+          <blockquote class="blockquote ask-blockquote">
             <div class="mb-3">
               <%= label_tag(:question, "Question:", class: "form-label") %>
               <%= text_field_tag(:question, nil, class: "form-control") %>
